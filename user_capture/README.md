@@ -1,6 +1,6 @@
 ## Project 1
 
-# Network IP Address Printer and Formatter
+# Network IP and MAC Address Printer and Formatter (LAN SCANNER)
 
 ## Bash Script (`capture_users.sh`)
 
