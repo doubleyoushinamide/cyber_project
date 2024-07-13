@@ -1,3 +1,3 @@
-#!/bin/sh
+#!/bin/bash
 
-sh "./capture_users.sh"  # Adjust the script name/path as needed
+bash "./capture_users.sh"  # Adjust the script name/path as needed
