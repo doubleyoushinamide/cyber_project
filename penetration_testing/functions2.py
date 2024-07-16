@@ -7,13 +7,16 @@ def compGuess():
     favWord = random.choice(wordList)
     return favWord
 
-userWord = str(input("Guess a word that I'd written \n")).lower()
-Guess = compGuess().lower()
-#print(userWord)
+favWord = compGuess().lower()
+#print(favWord)
+wordCount = len(favWord)
+#print (wordCount)
+new = []
+def harshes():
+    i=0
+    #new = []
+    while i < wordCount:
+        new.insert("*_*)
+        i+=1
 
-if userWord == Guess:
-    print("You guessed correctly!")
-else:
-    print("Try again!")
-
-#print (wordList)
+harshes()
