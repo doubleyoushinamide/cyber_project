@@ -1,22 +1,14 @@
-# This program splits inputs strings into lists and then turn it into a guessing
-words = str(input("kindly input about 3 words of choice: \n"))
-wordList = words.split(" ")
+# This is a simple game that asks the user to guess the words an admin types
 
-def compGuess():
-    import random
-    favWord = random.choice(wordList)
-    return favWord
+# Put all functions within here
+##-------------------------------####
 
-favWord = compGuess().lower()
-#print(favWord)
-wordCount = len(favWord)
-#print (wordCount)
-new = []
-def harshes():
-    i=0
-    #new = []
-    while i < wordCount:
-        new.insert("*_*)
-        i+=1
+#Admin types in the word of his choice
+password = int(input("Type in your password if you're an admin \n"))
 
-harshes()
+if password == int(1234):
+    salute = str(input("ADMIN Shina Salau: Input a word \n"))
+elif password == int(4321):
+    salute = str(input("ADMIN Mary Salau: Input a word \n"))
+else:
+    print("You're not an admin!")
