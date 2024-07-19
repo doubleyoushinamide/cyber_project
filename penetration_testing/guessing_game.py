@@ -5,7 +5,7 @@ def is_admin():
             if admin == 1:
                 return True
             elif admin == 2:
-                print("You are advised to log out.")
+                print("You have been logged out.")
                 return False
             else:
                 print("Invalid input. Please enter 1 or 2.")
