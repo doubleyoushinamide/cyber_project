@@ -13,7 +13,7 @@ def is_admin():
             print("Invalid input. Please enter a number (1 or 2).")
 
 def get_word_of_choice():
-    return input("Admin, please input the word of choice: ")
+    return input("Admin, please input the word of choice: ").upper()
 
 def create_harshed_words(word_of_choice):
     return ["*_*" for _ in word_of_choice]
@@ -23,7 +23,7 @@ def display_harshed_words(harshed_words):
 
 def get_user_guess():
     while True:
-        guess = input("It's time to guess a word: ")
+        guess = input("It's time to guess a word: ").upper()
         if len(guess) == 1 and guess.isalpha():
             return guess
         else:
@@ -44,6 +44,7 @@ def play_game(word_of_choice, harshed_words):
                     guessed_indices.add(i)
             if harshed_words == list(word_of_choice):
                 print("You have successfully guessed correctly!")
+                print(f'The word is: {word_of_choice}')
                 return
         else:
             tries -= 1
